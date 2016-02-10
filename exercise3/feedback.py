@@ -59,7 +59,7 @@ def feedback():
         sender = request.form['client_mail']
         to_sender(sender, content)
         to_owner(sender, content)        
-    return render_template('exercise2.html')
+    return render_template('index.html')
 
 @app.route('/thanks/')
 def thanks():
